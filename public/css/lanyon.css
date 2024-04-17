@@ -557,6 +557,20 @@ a.pagination-item:hover {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
 
+/* Row and column for two side by side images */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* Mathjax tool tip on hover */
 .mathjax-tooltip {
   display: none;
