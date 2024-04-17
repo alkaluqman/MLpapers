@@ -4,7 +4,7 @@
  * Copyright (c) 2015 Mauricio Poppe
  * Licensed under the MIT license.
  */
-(function () {
+(function (document) {
   var $container = $(document.body);
   var $tooltip = $('<div />').addClass('mathjax-tooltip');
   $container.append($tooltip);
@@ -37,4 +37,4 @@
     $container.on('mouseout', 'a[href*="mjx-eqn-"]', onMouseOut);
   });
 
-})();
+})(document);
