@@ -38,53 +38,14 @@
   {% endif %}
 
 <!-- MathJax support -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
   <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    showProcessingMessages: false,
-    messageStyle: 'none',
-    tex2jax: {
-      inlineMath: [['$','$']],
-      displayMath: [['$$','$$']],
-      processEnvironments: false
-    },
-    // show equation numbers
-    TeX: {
-      equationNumbers: {
-        autoNumber: "AMS",
-        useLabelIds: true
-      }
-    },
-    'HTML-CSS': {
-      imageFont: null
-    }
-  });
-</script>
-<!--  <script type="text/x-mathjax-config">-->
-<!--  MathJax.Hub.Config({-->
-<!--    TeX: {-->
-<!--      equationNumbers: { autoNumber: "AMS" },-->
-<!--      tagSide: "right"-->
-<!--    },-->
-<!--    tex2jax: {-->
-<!--      inlineMath: [ ['$','$'], ["\\(","\\)"] ],-->
-<!--      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],-->
-<!--      processEscapes: true,-->
-<!--    }-->
-<!--  });-->
-<!--  MathJax.Hub.Register.StartupHook("TeX AMSmath Ready", function () {-->
-<!--    MathJax.InputJax.TeX.Stack.Item.AMSarray.Augment({-->
-<!--      clearTag() {-->
-<!--        if (!this.global.notags) {-->
-<!--          this.super(arguments).clearTag.call(this);-->
-<!--        }-->
-<!--      }-->
-<!--    });-->
-<!--  });-->
-<!--</script>-->
-<!--  <script type="text/javascript" id="MathJax-script" async-->
-<!--  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">-->
-<!--  </script>-->
 
 </head>
