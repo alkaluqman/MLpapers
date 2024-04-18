@@ -3,4 +3,6 @@ layout: page
 title: About
 ---
 
-What are we doing? XD
+<p align="center">
+    <img src="public/doge.jpg" alt="dogelife">
+</p>
