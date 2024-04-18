@@ -4,5 +4,5 @@ title: About
 ---
 
 <p align="center">
-    <img src="public/doge.jpg" alt="dogelife">
+    <img src="{{ site.baseurl }}/public/doge.jpg" alt="dogelife">
 </p>
